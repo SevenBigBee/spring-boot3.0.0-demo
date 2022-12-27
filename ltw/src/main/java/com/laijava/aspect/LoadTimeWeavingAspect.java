@@ -3,7 +3,6 @@ package com.laijava.aspect;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,10 +15,9 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-
 public class LoadTimeWeavingAspect {
 
-    // 解决找不到aspectOf()方法异常
+//     解决找不到aspectOf()方法异常
     public static LoadTimeWeavingAspect aspectOf() {
         return new LoadTimeWeavingAspect();
     }
