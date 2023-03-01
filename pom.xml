@@ -7,6 +7,8 @@
     <modules>
         <module>ltw</module>
         <module>pdf2image</module>
+        <module>others</module>
+        <module>easy-rules</module>
     </modules>
     <groupId>com.laijava</groupId>
     <artifactId>springboot3</artifactId>
@@ -21,6 +23,9 @@
         <laijava.versio>1.0</laijava.versio>
         <pluginPluginVersion>3.6.4</pluginPluginVersion>
         <pdfbox.version>2.0.15</pdfbox.version>
+        <jnativehook.version>2.1.0</jnativehook.version>
+        <fastjson.version>2.0.24</fastjson.version>
+        <easyRules.version>4.1.0</easyRules.version>
 
         <!--        <maven.compiler.source>17</maven.compiler.source>-->
 <!--        <maven.compiler.target>17</maven.compiler.target>-->
@@ -44,6 +49,38 @@
                 <groupId>org.apache.pdfbox</groupId>
                 <artifactId>pdfbox</artifactId>
                 <version>${pdfbox.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.1stleg/jnativehook -->
+            <dependency>
+                <groupId>com.1stleg</groupId>
+                <artifactId>jnativehook</artifactId>
+                <version>${jnativehook.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba.fastjson2/fastjson2 -->
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-rules-core</artifactId>
+                <version>${easyRules.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-rules-mvel</artifactId>
+                <version>${easyRules.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-rules-spel</artifactId>
+                <version>${easyRules.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pdf2image</artifactId>
+    <artifactId>others</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -18,20 +18,10 @@
     </properties>
 
     <dependencies>
+       <!-- https://mvnrepository.com/artifact/com.1stleg/jnativehook -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>com.1stleg</groupId>
+            <artifactId>jnativehook</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>fontbox</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>pdfbox</artifactId>
-        </dependency>
-
-
-
     </dependencies>
 </project>
