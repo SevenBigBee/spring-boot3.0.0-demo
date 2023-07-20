@@ -9,6 +9,7 @@
         <module>pdf2image</module>
         <module>others</module>
         <module>easy-rules</module>
+        <module>bean2xml</module>
     </modules>
     <groupId>com.laijava</groupId>
     <artifactId>springboot3</artifactId>
