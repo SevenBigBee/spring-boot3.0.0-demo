@@ -1,0 +1,32 @@
+---
+name: "名称转换"
+description: "将SrcObj中的name字段转换为TargetObj中的value"
+condition: "null != src.name"
+priority: 1
+actions:
+  - "System.out.println(1);"
+  - "target.setValue(src.name);"
+---
+name: "备注转换"
+description: "将SrcObj中的remark字段转换为TargetObj中的description"
+condition: "null != src.remark"
+priority: 2
+actions:
+  - "System.out.println(2);"
+  - "target.setDescription(src.remark);"
+---
+name: "性别转换"
+description: "将SrcObj中的sex字段转换为TargetObj中的gender"
+condition: "src.sex == '男'"
+priority: 3
+actions:
+  - "System.out.println(2);"
+  - "target.setGender(\"M\");"
+---
+name: "性别转换2"
+description: "将SrcObj中的sex字段转换为TargetObj中的gender"
+condition: "src.sxe == '女'"
+priority: 4
+actions:
+  - "System.out.println(2);"
+  - "target.setGender(\"F\");"
